@@ -1,0 +1,1 @@
+k6 run --config ./config/spike_test.json script.js

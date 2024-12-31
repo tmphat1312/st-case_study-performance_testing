@@ -1,0 +1,19 @@
+{
+  "name": "st-case_study-performance_testing",
+  "scripts": {
+    "clean": "rimraf test_results",
+    "test-load": "./scripts/load_test/test.sh",
+    "test-spike": "./scripts/spike_test/test.sh",
+    "test-stress": "./scripts/stress_test/test.sh",
+    "test-load:csv": "./scripts/load_test/test_out_csv.sh",
+    "test-spike:csv": "./scripts/spike_test/test_out_csv.sh",
+    "test-stress:csv": "./scripts/stress_test/test_out_csv.sh",
+    "test-load:html": "./scripts/load_test/test_out_html.sh",
+    "test-spike:html": "./scripts/spike_test/test_out_html.sh",
+    "test-stress:html": "./scripts/stress_test/test_out_html.sh"
+  },
+  "devDependencies": {
+    "@types/k6": "^0.54.2",
+    "rimraf": "^6.0.1"
+  }
+}

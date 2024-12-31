@@ -1,0 +1,1 @@
+k6 run --config ./config/stress_test.json script.js

@@ -1,0 +1,13 @@
+{
+  "hosts": {
+    "sharebug.com": "localhost:4000"
+  },
+  "stages": [
+    { "duration": "30s", "target": 2000 },
+    { "duration": "2m", "target": 2000 },
+    { "duration": "30s", "target": 0 }
+  ],
+  "thresholds": {
+    "http_req_duration": ["p(95)<500"]
+  }
+}

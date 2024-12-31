@@ -1,0 +1,1 @@
+mkdir -p test_results && K6_WEB_DASHBOARD=true K6_WEB_DASHBOARD_EXPORT=/test_results/load_test.html k6 run --config ./config/load_test.json script.js

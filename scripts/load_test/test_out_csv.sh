@@ -1,0 +1,1 @@
+mkdir -p test_results && k6 run --config ./config/load_test.json --out csv=test_results/load_test.csv script.js
