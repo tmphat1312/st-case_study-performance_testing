@@ -1,1 +1,1 @@
-mkdir -p test_results && K6_WEB_DASHBOARD=true K6_WEB_DASHBOARD_EXPORT=/test_results/spike_test.html k6 run --config ./config/spike_test.json --out csv=./test_results/spike_test.csv script.js
+mkdir -p test_results && K6_WEB_DASHBOARD=true K6_WEB_DASHBOARD_EXPORT=./test_results/spike_test.html k6 run --config ./config/spike_test.json --out csv=./test_results/spike_test.csv script.js
