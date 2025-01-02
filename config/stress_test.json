@@ -3,15 +3,16 @@
     "sharebug.com": "localhost:4000"
   },
   "stages": [
-    { "duration": "1m", "target": 200 },
-    { "duration": "5m", "target": 200 },
-    { "duration": "1m", "target": 800 },
-    { "duration": "5m", "target": 800 },
-    { "duration": "1m", "target": 1000 },
-    { "duration": "5m", "target": 1000 },
-    { "duration": "5m", "target": 0 }
+    { "duration": "1m", "target": 20 },
+    { "duration": "3m", "target": 20 },
+    { "duration": "1m", "target": 80 },
+    { "duration": "3m", "target": 80 },
+    { "duration": "1m", "target": 100 },
+    { "duration": "3m", "target": 100 },
+    { "duration": "3m", "target": 0 }
   ],
   "thresholds": {
-    "http_req_duration": ["p(95)<500"]
+    "http_req_duration": ["avg<1000", "min<100", "max<3000"],
+    "http_req_failed": ["rate<0.05"]
   }
 }

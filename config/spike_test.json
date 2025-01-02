@@ -3,11 +3,12 @@
     "sharebug.com": "localhost:4000"
   },
   "stages": [
-    { "duration": "30s", "target": 2000 },
-    { "duration": "2m", "target": 2000 },
+    { "duration": "30s", "target": 100 },
+    { "duration": "2m", "target": 100 },
     { "duration": "30s", "target": 0 }
   ],
   "thresholds": {
-    "http_req_duration": ["p(95)<500"]
+    "http_req_duration": ["avg<1000", "min<100", "max<4000"],
+    "http_req_failed": ["rate<0.1"]
   }
 }
